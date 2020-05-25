@@ -3,14 +3,14 @@ entries:
   stardog:
   - apiVersion: v2
     appVersion: latest
-    created: "2020-05-25T18:01:42.566056+01:00"
+    created: "2020-05-25T18:07:17.14032+01:00"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
       repository: http://storage.googleapis.com/kubernetes-charts-incubator
       version: 2.1.3
     description: Helm chart to deploy Stardog Cluster and associated services
-    digest: 142742f5c7d44410f8bd100ac946e927622b9e613b919efa76f03768c9cc674b
+    digest: 0155652662d477b2707fbaa339411f5023265955d54133109339539b5761515f
     home: https://github.com/stardog-union/helm-charts
     icon: https://s3.amazonaws.com/stardog-logos.public/stardog-logo.png
     maintainers:
@@ -23,7 +23,7 @@ entries:
     version: 1.0.3
   - apiVersion: v2
     appVersion: latest
-    created: "2020-05-25T18:01:42.561213+01:00"
+    created: "2020-05-25T18:07:17.13664+01:00"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -43,7 +43,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: latest
-    created: "2020-05-25T18:01:42.559021+01:00"
+    created: "2020-05-25T18:07:17.134421+01:00"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -63,7 +63,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: latest
-    created: "2020-05-25T18:01:42.556816+01:00"
+    created: "2020-05-25T18:07:17.132045+01:00"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -81,4 +81,4 @@ entries:
     urls:
     - http://agnos-ai.github.io/helm-charts/stardog-1.0.0.tgz
     version: 1.0.0
-generated: "2020-05-25T18:01:42.554345+01:00"
+generated: "2020-05-25T18:07:17.129767+01:00"
