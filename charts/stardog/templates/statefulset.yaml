@@ -27,6 +27,12 @@ spec:
         app.kubernetes.io/version: {{ .Chart.AppVersion }}
         app.kubernetes.io/component: server
     spec:
+{{ if .Values.securityContext.enabled }}
+      securityContext:
+        runAsUser: {{ .Values.securityContext.runAsUser }}
+        runAsGroup: {{ .Values.securityContext.runAsGroup }}
+        fsGroup: {{ .Values.securityContext.fsGroup  }}
+{{ end }}
       affinity:
         podAntiAffinity:
           {{ .Values.antiAffinity }}:
@@ -90,16 +96,12 @@ spec:
         - name: stardog-license
           mountPath: /etc/stardog-license
           readOnly: true
-<<<<<<< HEAD
-=======
         - name: {{ include "stardog.fullname" . }}-password
           mountPath: /etc/stardog-password
           readOnly: true
->>>>>>> parameterised stardog k8s resource names
         - name: data
           mountPath: /var/opt/stardog/
-        - name: {{ include "stardog.fullname" . }}-config
-          mountPath: /etc/stardog-conf
+          readOnly: false
         - name: {{ include "stardog.fullname" . }}-properties-vol
           mountPath: /etc/stardog-conf/stardog.properties
           subPath: stardog.properties

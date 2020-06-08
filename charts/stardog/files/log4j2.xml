@@ -17,14 +17,14 @@
 			<JsonLayout compact="true" eventEol="true" includeStacktrace="true" stacktraceAsString="true" />
 		</Console>
 
-		<File name="stardogAppender"
+		<!-- <File name="stardogAppender"
 			  fileName="${LOG_DIR}/${STARDOG_LOG}.log">
 			<PatternLayout pattern="${PATTERN}"/>
 		</File>
 		<File name="zookeeperAppender"
 			  fileName="${LOG_DIR}/${ZOOKEEPER_LOG}.log">
 			<PatternLayout pattern="${PATTERN}"/>
-		</File>
+		</File> -->
 	</Appenders>
 	<Loggers>
 		<Root level="WARN">
@@ -32,22 +32,22 @@
 		</Root>
 		<Logger name="com.complexible.stardog" level="INFO" additivity="false">
 			<AppenderRef ref="STDOUT"/>
-			<AppenderRef ref="stardogAppender"/>
+			<!-- <AppenderRef ref="stardogAppender"/> -->
 		</Logger>
 		<!-- ignore minor warnings from PDFBox about mis-named Unicode symbols -->
 		<Logger name="org.apache.pdfbox.encoding.Encoding" level="ERROR" additivity="false">
 			<AppenderRef ref="STDOUT"/>
-			<AppenderRef ref="stardogAppender"/>
+			<!-- <AppenderRef ref="stardogAppender"/> -->
 		</Logger>
 		<!-- ignore warning from RIO about our replacing their TurtleWriter -->
 		<Logger name="org.com.complexible.common.openrdf.rio.RDFWriterRegistry" level="ERROR" additivity="false">
 			<AppenderRef ref="STDOUT"/>
-			<AppenderRef ref="stardogAppender"/>
+			<!-- <AppenderRef ref="stardogAppender"/> -->
 		</Logger>
 		<!-- redirect all zookeeper records to its own log file -->
 		<Logger name="org.apache.zookeeper" level="INFO" additivity="false">
 			<AppenderRef ref="STDOUT"/>
-			<AppenderRef ref="zookeeperAppender"/>
+			<!-- <AppenderRef ref="zookeeperAppender"/> -->
 		</Logger>
 
 		<!-- do not edit -->

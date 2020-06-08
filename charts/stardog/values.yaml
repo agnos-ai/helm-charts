@@ -53,6 +53,15 @@ resources: {}
 #    cpu: 2
 #    memory: 6Gi
 
+securityContext:
+  enabled: false
+  runAsUser: null
+  runAsGroup: null
+  fsGroup: null
+
+initContainers:
+  enabled: true
+
 # Settings to use for the ZooKeeper chart that Stardog depends on.
 # Stardog requires ZooKeeper 3.4.x.
 zookeeper:
