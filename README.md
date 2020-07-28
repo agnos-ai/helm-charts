@@ -20,7 +20,7 @@ helm dependency update helm-charts/charts/stardog
 
 ### Package with the new version number
 ```
-helm package charts/stardog --app-version 1.0.1
+helm package helm-charts/charts/stardog --version 1.0.1
 ```
 
 From the `gh-pages` branch:
