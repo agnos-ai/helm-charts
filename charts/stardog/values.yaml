@@ -67,6 +67,12 @@ log4jConfig:
   # we provide a default log4j2.xml, if you want to provide your own. in your own values.yaml, set log4Config.override: true, and log4Config.content
   # content: null
 
+dbms:
+  spilling:
+    max:
+      file:
+        length: 1g
+
 # Settings to use for the ZooKeeper chart that Stardog depends on.
 # Stardog requires ZooKeeper 3.4.x.
 zookeeper:
