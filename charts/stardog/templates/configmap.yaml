@@ -32,4 +32,4 @@ data:
     pack.zookeeper.address={{ if .Values.zookeeper.enabled }} {{- template "zkservers" . }} {{ else }} {{ .Values.zookeeper.addresses }} {{ end }}
     pack.node.join.retry.count=15
     pack.node.join.retry.delay=1m
-    dbms.spilling.max.file.length={{ .Values.dbms.spilling.max.file.length }}
+    spilling.max.file.length={{ .Values.spilling.max.file.length }}
