@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+set -e
+set -x
 
 VERSION=$1
 
@@ -14,9 +16,9 @@ cd helm-charts
 
 git worktree add gh-pages origin/gh-pages
 
-cp ../stardog-$VERSION.tgz .
+cp ./stardog-$VERSION.tgz gh-pages
 
-helm repo index helm-charts --url http://agnos-ai.github.io/helm-charts/
+helm repo index gh-pages --url http://agnos-ai.github.io/helm-charts/
 
 git add .
 
