@@ -38,6 +38,19 @@ $ helm delete <helm-release-name> --namespace <your-namespace>
 ```
 
 ## Packaging
+
+# a script
+I've just added package.sh,  try
+```bash
+./package.sh <version>
+```
+like
+```bash
+./package.sh 1.0.9-agnosrc
+```
+
+# manual:
+
 Run the following commands from one level above the project root directory.
 
 In master branch:
