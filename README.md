@@ -74,7 +74,7 @@ cp stardog-1.0.1.tgz helm-charts/.
 
 ### Update the index
 ```
-helm repo index helm-charts --url http://agnos-ai.github.io/helm-charts/
+helm repo index . --url http://agnos-ai.github.io/helm-charts/
 ```
 
 Push the updated index.yaml and tgz files.
