@@ -33,3 +33,7 @@ data:
     pack.node.join.retry.count=15
     pack.node.join.retry.delay=1m
     spilling.max.file.length={{ .Values.spilling.max.file.length }}
+    logging.slow_query.enabled={{ .Values.slow_query.enabled }}
+    logging.slow_query.time={{ .Values.slow_query.time }}
+    logging.slow_query.file={{ .Values.slow_query.file }}
+    # EOF

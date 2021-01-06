@@ -72,6 +72,11 @@ spilling:
     file:
       length: 1g
 
+slow_query:
+  enabled: false
+  time: 5s
+  file: /dev/stderr
+
 # Settings to use for the ZooKeeper chart that Stardog depends on.
 # Stardog requires ZooKeeper 3.4.x.
 zookeeper:
