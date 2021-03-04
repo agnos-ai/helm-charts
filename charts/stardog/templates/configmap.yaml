@@ -1,3 +1,4 @@
+{{ if (eq .Values.log4jConfig.parentProvidedConfigMap false) }}
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -13,7 +14,9 @@ data:{{ if .Values.log4jConfig.override }}
   log4j2.xml: {{ toJson .Values.log4jConfig.content }}{{ else }}
   {{- (.Files.Glob "files/log4j2.xml").AsConfig | nindent 2 }}
 {{ end }}
+{{ end }}
 ---
+{{ if (eq .Values.stardogProperties.parentProvidedConfigMap false ) }}
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -37,3 +40,5 @@ data:
     logging.slow_query.time={{ .Values.slow_query.time }}
     logging.slow_query.file={{ .Values.slow_query.file }}
     # EOF
+
+  {{ end }}

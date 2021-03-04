@@ -64,8 +64,14 @@ securityContext:
 
 log4jConfig:
   override: false
+  # parentProvidedConfigMap if true, the parent chart should create a configmap with stardog.properties
+  parentProvidedConfigMap: false
   # we provide a default log4j2.xml, if you want to provide your own. in your own values.yaml, set log4Config.override: true, and log4Config.content
   # content: null
+
+stardogProperties:
+  # parentProvidedConfigMap if true, the parent chart should create a configmap with stardog.properties
+  parentProvidedConfigMap: false
 
 spilling:
   max:
