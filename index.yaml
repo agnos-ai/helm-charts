@@ -3,7 +3,27 @@ entries:
   stardog:
   - apiVersion: v2
     appVersion: latest
-    created: "2021-01-06T19:46:08.317142Z"
+    created: "2021-03-04T18:59:39.4404069Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: https://charts.helm.sh/incubator
+      version: 2.1.6
+    description: Helm chart to deploy Stardog Cluster and associated services
+    digest: a2c8c5d3cc238e98385961119192c6a2d14d4ebd7965b17e16c0a8b793a4f4ff
+    home: https://github.com/stardog-union/helm-charts
+    icon: https://s3.amazonaws.com/stardog-logos.public/stardog-logo.png
+    maintainers:
+    - email: tech@stardog.com
+      name: Stardog Union
+      url: https://www.stardog.com
+    name: stardog
+    urls:
+    - http://agnos-ai.github.io/helm-charts/stardog-1.0.12-agnosrc.tgz
+    version: 1.0.12-agnosrc
+  - apiVersion: v2
+    appVersion: latest
+    created: "2021-03-04T18:59:39.4372994Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -23,7 +43,7 @@ entries:
     version: 1.0.11-agnosrc
   - apiVersion: v2
     appVersion: latest
-    created: "2021-01-06T19:46:08.314766Z"
+    created: "2021-03-04T18:59:39.4347074Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -43,7 +63,7 @@ entries:
     version: 1.0.10-agnosrc
   - apiVersion: v2
     appVersion: latest
-    created: "2021-01-06T19:46:08.355229Z"
+    created: "2021-03-04T18:59:39.4693669Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -63,7 +83,7 @@ entries:
     version: 1.0.9-testingagnos
   - apiVersion: v2
     appVersion: latest
-    created: "2021-01-06T19:46:08.3529Z"
+    created: "2021-03-04T18:59:39.4668196Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -83,7 +103,7 @@ entries:
     version: 1.0.9-agnostesting4
   - apiVersion: v2
     appVersion: latest
-    created: "2021-01-06T19:46:08.350548Z"
+    created: "2021-03-04T18:59:39.464682Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -103,7 +123,7 @@ entries:
     version: 1.0.9-agnostesting3
   - apiVersion: v2
     appVersion: latest
-    created: "2021-01-06T19:46:08.348053Z"
+    created: "2021-03-04T18:59:39.462773Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -123,7 +143,7 @@ entries:
     version: 1.0.9-agnostesting2
   - apiVersion: v2
     appVersion: latest
-    created: "2021-01-06T19:46:08.344755Z"
+    created: "2021-03-04T18:59:39.4598375Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -143,7 +163,7 @@ entries:
     version: 1.0.9-agnostesting
   - apiVersion: v2
     appVersion: latest
-    created: "2021-01-06T19:46:08.342245Z"
+    created: "2021-03-04T18:59:39.4576834Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -163,7 +183,7 @@ entries:
     version: 1.0.8-agnosrc
   - apiVersion: v2
     appVersion: latest
-    created: "2021-01-06T19:46:08.339631Z"
+    created: "2021-03-04T18:59:39.4557021Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -183,7 +203,7 @@ entries:
     version: 1.0.7-agnosrc
   - apiVersion: v2
     appVersion: latest
-    created: "2021-01-06T19:46:08.335992Z"
+    created: "2021-03-04T18:59:39.4535975Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -203,7 +223,7 @@ entries:
     version: 1.0.6
   - apiVersion: v2
     appVersion: latest
-    created: "2021-01-06T19:46:08.332564Z"
+    created: "2021-03-04T18:59:39.4514551Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -223,7 +243,7 @@ entries:
     version: 1.0.5
   - apiVersion: v2
     appVersion: latest
-    created: "2021-01-06T19:46:08.327384Z"
+    created: "2021-03-04T18:59:39.4485023Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -243,7 +263,7 @@ entries:
     version: 1.0.4
   - apiVersion: v2
     appVersion: latest
-    created: "2021-01-06T19:46:08.324632Z"
+    created: "2021-03-04T18:59:39.446556Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -263,7 +283,7 @@ entries:
     version: 1.0.3
   - apiVersion: v2
     appVersion: latest
-    created: "2021-01-06T19:46:08.322207Z"
+    created: "2021-03-04T18:59:39.4445648Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -283,7 +303,7 @@ entries:
     version: 1.0.3-nonroot
   - apiVersion: v2
     appVersion: latest
-    created: "2021-01-06T19:46:08.319573Z"
+    created: "2021-03-04T18:59:39.4425123Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -303,7 +323,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: latest
-    created: "2021-01-06T19:46:08.309156Z"
+    created: "2021-03-04T18:59:39.4321854Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -323,7 +343,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: latest
-    created: "2021-01-06T19:46:08.30572Z"
+    created: "2021-03-04T18:59:39.429685Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -341,4 +361,4 @@ entries:
     urls:
     - http://agnos-ai.github.io/helm-charts/stardog-1.0.0.tgz
     version: 1.0.0
-generated: "2021-01-06T19:46:08.3024Z"
+generated: "2021-03-04T18:59:39.4265279Z"
