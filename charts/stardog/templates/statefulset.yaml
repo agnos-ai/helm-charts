@@ -95,7 +95,7 @@ spec:
         - name: {{ include "stardog.fullname" . }}-password
           mountPath: /etc/stardog-password
           readOnly: true
-        - name: stardog-license
+        - name: {{ .Release.Name}}-stardog-license
           mountPath: /etc/stardog-license
           readOnly: true
         - name: data
@@ -153,9 +153,9 @@ spec:
       imagePullSecrets:
       - name: {{ .Release.Name }}-image-pull-secret
       volumes:
-      - name: stardog-license
+      - name: {{ .Release.Name}}-stardog-license
         secret:
-          secretName: stardog-license
+          secretName: {{ .Release.Name}}-stardog-license
       - name: {{ include "stardog.fullname" . }}-properties-vol
         configMap:
           name: {{ include "stardog.fullname" . }}-properties
