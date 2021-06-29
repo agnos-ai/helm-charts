@@ -8,9 +8,9 @@ echo Will package as $VERSION
 
 cd ..
 
-helm dependency update helm-charts/charts/stardog
+helm dependency update helm-charts/stardog
 
-helm package helm-charts/charts/stardog --version $VERSION
+helm package helm-charts/stardog --version $VERSION
 
 cd helm-charts
 
